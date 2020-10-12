@@ -24,7 +24,7 @@ import main.util.download.Download;
 import main.util.filechooser.FileChooser;
 import main.util.filedetails.FileDetails;
 
-public class AssignmentPanel extends JPanel {
+public class CourseAssignmentPanel extends JPanel {
 
     /**
      * Create the panel.
@@ -33,7 +33,7 @@ public class AssignmentPanel extends JPanel {
     JTable table;
     private AssignmentTableModel atm;
     private String p;
-    private AssignmentPanel cp=this;
+    private CourseAssignmentPanel cp=this;
     public CourseAssignmentPanel()
     {
 
@@ -41,7 +41,7 @@ public class AssignmentPanel extends JPanel {
     }
 
     /*Assume I have a path in my argument*/
-    public AssignmentPanel(String path)throws Exception {
+    public CourseAssignmentPanel(String path)throws Exception {
         this.setPreferredSize(new Dimension(1300,600));
         //this.setBorder(BorderFactory.createLineBorder(Color.RED));
         path+="assignments/";
