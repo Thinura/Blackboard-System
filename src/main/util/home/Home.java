@@ -1,14 +1,9 @@
-package main.util;
+package main.util.home;
 
 import java.awt.BorderLayout;
 
-import java.awt.EventQueue;
-
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JWindow;
-import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -33,17 +28,10 @@ import de.javasoft.plaf.synthetica.SyntheticaBlueLightLookAndFeel;
 //import de.javasoft.plaf.synthetica.SyntheticaLookAndFeel;
 //import de.javasoft.plaf.synthetica.SyntheticaStandardLookAndFeel;
 
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import java.awt.FlowLayout;
 import java.awt.Font;
-import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.text.ParseException;
-import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import main.util.login.*;
@@ -129,7 +117,7 @@ public class Home extends JFrame {
         btnProfesssor.setBounds(187, 105, 146, 70);
         btnProfesssor.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
-                LoginPortal loginPortal = new LoginPortal("Professor");
+                LoginPortal loginPortal = new LoginPortal("Instructor");
                 loginPortal.setVisible(true);
                 setVisible(false);
                 dispose();
